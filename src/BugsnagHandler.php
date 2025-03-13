@@ -6,6 +6,7 @@ use Bugsnag\Client as BugsnagClient;
 use Bugsnag\Report as BugsnagReport;
 use Monolog\Handler\AbstractProcessingHandler;
 use Monolog\Logger;
+use Monolog\LogRecord;
 
 class BugsnagHandler extends AbstractProcessingHandler
 {
@@ -38,7 +39,7 @@ class BugsnagHandler extends AbstractProcessingHandler
     /**
      * Writes the record down to the log of the implementing handler
      */
-    protected function write(array $record): void
+    protected function write(LogRecord $record): void
     {
         $severity = $this->getSeverity($record['level']);
 
