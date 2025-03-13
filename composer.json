@@ -1,5 +1,5 @@
 {
-    "name": "mead-steve/mono-snag",
+    "name": "rexlmanu/mono-snag",
     "description": "Bugsnag integration for monolog. An abstract handler that sends messages to Bugsnag",
     "keywords": ["bugsnag", "monolog", "logging", "error"],
     "minimum-stability": "stable",
